@@ -1,16 +1,20 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+
+import { fetchVideos } from '../actions'; 
 
 class SearchBar extends Component {
     
-    state = { term : 'test'};
+    state = { term : ''};
 
     onInputChange = event => {
         this.setState({ term : event.target.value})
     };
 
     onFormSubmit = event => {
+        console.log("onFormSubmit")
         event.preventDefault();
-        this.props.onFormSubmit(this.state.term);
+        this.props.fetchVideos(this.state.term);
     };
 
     render () {
@@ -31,4 +35,4 @@ class SearchBar extends Component {
     }
 }
 
-export default SearchBar;
+export default connect(null, { fetchVideos })(SearchBar);
