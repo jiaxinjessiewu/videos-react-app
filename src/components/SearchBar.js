@@ -12,7 +12,6 @@ class SearchBar extends Component {
     };
 
     onFormSubmit = event => {
-        console.log("onFormSubmit")
         event.preventDefault();
         this.props.fetchVideos(this.state.term);
     };
