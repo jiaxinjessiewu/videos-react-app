@@ -23,10 +23,10 @@ class App extends React.Component {
                 <SearchBar/>
                 <div className="ui grid">
                     <div className="ui row">
-                        <div className="eleven wide column">
+                        <div className="eleven wide column detail">
                             <VideoDetail video={this.props.selectedVideo}/>
                         </div>
-                        <div className="five wide column">
+                        <div className="five wide column list">
                             <VideosList videos={this.props.videos}/>
                         </div>
                     </div>

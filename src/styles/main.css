@@ -1,3 +1,6 @@
+body {
+    background-image: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+}
 .main {
     width: 80%;
     margin: 0 auto;
@@ -7,7 +10,12 @@
     align-items: center !important;
     cursor: pointer;
 }
-  
 .video-item.item img {
 max-width: 180px;
+}
+@media (max-width: 1023px) {
+    .main {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
