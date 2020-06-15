@@ -1,4 +1,12 @@
+# Video Player - React Redux App 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## About the application
+
+videos-react-app is a react video search application implemented using Redux and the [YouTube Api](https://developers.google.com/youtube/v3/docs), which allows users to search through Youtube and view the each selected video.
+
+Live demo: https://video-reactjs-app.web.app/
 
 ## Available Scripts
 
